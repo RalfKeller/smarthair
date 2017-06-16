@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule, MdCardModule} from '@angular/material';
+import { MdToolbarModule, MaterialModule, MdButtonModule, MdCheckboxModule, MdCardModule, MdSidenavModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { PlzComponent } from './plzComponent/plz.component';
@@ -25,17 +25,16 @@ const appRoutes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
-    BrowserModule,
-    FormsModule,
-    HttpModule,
     BrowserAnimationsModule,
+    MaterialModule,
+    MdToolbarModule,
     MdButtonModule,
     MdCheckboxModule,
     MdCardModule,
-  ],
-  exports: [
-    MdButtonModule,
-    MdCheckboxModule,
+    MdSidenavModule,
+    BrowserModule,
+    FormsModule,
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
