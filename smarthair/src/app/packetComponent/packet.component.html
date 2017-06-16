@@ -1,21 +1,28 @@
     <div class="app-content">
+	<style>
+		p {text-align:center;}
+		b {margin-left:20px;}
+	</style>
     
 
         <md-card> 
 
             <md-card-title>
-                Bitte Postleitzahl eingeben.
+				<p>Bitte Postleitzahl eingeben.</p>
+				
             </md-card-title>
             <md-card-content>
-                
+               <p> 
                 <md-input-container>
                     <input mdInput placeholder="Postleitzahl" value="">
                 </md-input-container>
                 <a routerLink="/plz" routerLinkActive="active">
-                
-                    <button md-raised-button> TEST </button>
+					<b>
+                    <button md-raised-button> Test </button>
+					</b>
                  
                 </a>
+				</p>
 
             </md-card-content>
 
