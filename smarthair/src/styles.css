@@ -7,7 +7,9 @@ md-sidenav-layout.m2app-dark {
 }
 
 .app-content md-card {
-  margin: 20px;
+  margin: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .app-sidenav {
