@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { routerTransition } from '../animation/router.animations'
 
 @Component({
@@ -9,7 +10,11 @@ import { routerTransition } from '../animation/router.animations'
 })
 
 export class PlzComponent implements OnInit {
-    constructor() { }
+    constructor(private router : Router) { }
+
+    navigateNext() {
+        this.router.navigateByUrl("/packet");
+    }
 
     ngOnInit() { }
 }

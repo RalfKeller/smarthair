@@ -4,13 +4,28 @@
 		b {margin-left:20px;}
 	</style>
     
-
+        <div style="text-align: center; margin-top:5%">
+        <span style="background:black; border-radius:5px; padding: 5px;">
+            Buche deinen Friseur mit Smart Hair!
+        </span>
+        </div>
         <md-card> 
 
             <md-card-title>
-				<p>Bitte Packete auswählen.</p>
+				<p>Bitte Postleitzahl eingeben.</p>
+				
             </md-card-title>
             <md-card-content>
+               <p> 
+                
+                <div class="input-group">
+                    
+                    <input type="text" class="form-control" placeholder="Postleitzahl">
+                    <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button" (click)="navigateNext();">Go!</button>
+                    </span>
+                </div>
+
 
             </md-card-content>
 
