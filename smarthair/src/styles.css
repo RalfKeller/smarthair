@@ -3,11 +3,16 @@ body {
 }
 
 md-toolbar {
-    background: #9C8B7F !important;
+    background: black !important;
+    color: white !important;
 }
 
 md-sidenav-layout.m2app-dark {
   background: black;
+}
+
+md-input-container {
+    background: white;
 }
 
 .app-content {
@@ -18,6 +23,7 @@ md-sidenav-layout.m2app-dark {
   margin: 10%;
   margin-left: 25%;
   margin-right: 25%;
+  background: whitesmoke
 }
 
 .app-sidenav {
