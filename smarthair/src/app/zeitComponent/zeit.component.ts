@@ -3,17 +3,17 @@ import { Router } from '@angular/router';
 import { routerTransition } from '../animation/router.animations'
 
 @Component({
-    selector: 'packet-component',
-    templateUrl: 'packet.component.html',
+    selector: 'zeit-component',
+    templateUrl: 'zeit.component.html',
     animations: [routerTransition()],
     host: {'[@routerTransition]' : ''}
 })
 
-export class PacketComponent implements OnInit {
-    constructor(private router : Router) { }
+export class ZeitComponent implements OnInit {
+    constructor(private router: Router) { }
 
-    navigateNext() {
-        this.router.navigateByUrl("/zeit");
+        navigateNext() {
+        this.router.navigateByUrl("/list");
     }
 
     ngOnInit() { }

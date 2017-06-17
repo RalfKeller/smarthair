@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
+import { ExpansionPanelsModule } from 'ng2-expansion-panels';
+
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MdToolbarModule, MaterialModule, MdButtonModule, MdCheckboxModule, MdCardModule, MdSidenavModule} from '@angular/material';
 
@@ -11,12 +13,15 @@ import { AppComponent } from './app.component';
 import { PlzComponent } from './plzComponent/plz.component';
 import { PacketComponent } from './packetComponent/packet.component';
 import { ListComponent } from './listComponent/list.component';
+import { ZeitComponent } from './zeitComponent/zeit.component';
+import { CompanyCardComponent } from './companyCardComponent/companycard.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/plz', pathMatch: 'full'},
   {path: 'plz', component: PlzComponent},
   {path: 'packet', component: PacketComponent},
-  {path: 'list', component: ListComponent}
+  {path: 'list', component: ListComponent },
+  {path: 'zeit', component: ZeitComponent },
 ];
 
 @NgModule({
@@ -25,6 +30,8 @@ const appRoutes: Routes = [
     PlzComponent,
     AppComponent,
     ListComponent,
+    ZeitComponent,
+    CompanyCardComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -38,6 +45,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    ExpansionPanelsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

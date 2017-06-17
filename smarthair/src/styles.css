@@ -2,6 +2,29 @@ body {
   margin: 0;
 }
 
+.text {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.entfernung {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+
+}
+
+md-card-content img {
+    display: inline-block;
+}
+
+.cardHeader {
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+}
+
 .frisur {
     margin: 5px;
     margin-top: 20px;
