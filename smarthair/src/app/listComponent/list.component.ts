@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../animation/router.animations';
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'list-selector',
@@ -9,7 +10,10 @@ import { routerTransition } from '../animation/router.animations';
 })
 
 export class ListComponent implements OnInit {
-    constructor() { }
+    constructor(private router:Router) { }
 
+    navigateNext() {
+        this.router.navigateByUrl("/booking");
+    }
     ngOnInit() { }
 }

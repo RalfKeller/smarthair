@@ -1,5 +1,5 @@
-    <div class="container-fluid">
-        <!--<div class="row">
+<div class="container-fluid">
+    <!--<div class="row">
             <nav class="col-2 hidden-xs-down bg-faded sidebar">
                 <ul class="nav nav-pills flex-column">
             <li class="nav-item">
@@ -21,82 +21,163 @@
             </main>
         </div>-->
 
-        <div class="row">
-            <div class="col-2">
-                <md-card style="margin-top: 20px">
-                    <md-card-content>
-                        <span style="font-size: 26px">Filter hinzufügen</span>
-                        <button md-fab style="height: 40px;width:40px; font-size:20px; background-color: #333333;">+</button>
-                    </md-card-content>
-                </md-card>
-            </div>
-            
-            <div class="col-10">
-                <md-card style="margin-top:20px; margin-left:20px;">
-                    <md-card-content>
-                        <img src="assets/logos/1.png" style="height:100px; display:inline-block">
-                            <span class="cardHeader">
+    <div class="row">
+        <div class="col-2">
+
+            <md-card style="margin-top: 20px">
+                <md-card-content>
+                    <span style="font-size: 26px">Filter: Last Minute</span>
+
+                </md-card-content>
+            </md-card>
+
+            <md-card style="margin-top: 20px">
+                <md-card-content>
+                    <span style="font-size: 26px">Filter hinzufügen</span>
+                    <button md-fab style="height: 40px;width:40px; font-size:20px; background-color: #333333;">+</button>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div class="col-10">
+            <md-card style="margin-top:20px; margin-left:20px;">
+                <md-card-content>
+                    <img src="assets/logos/1.png" style="height:100px; display:inline-block">
+                    <span class="cardHeader">
                                 Marico Coiffeur & Design <br>
                                 <img src="assets/stars.png"> <span class="text">(420)</span> <br>
-                                <span class="entfernung">
+                    <span class="entfernung">
                                     200 m entfernt
                                 </span>
-                            </span>
-                    </md-card-content>
 
-                    <md-card-footer>
-                        
-                    </md-card-footer>
-                </md-card>
 
-                <md-card style="margin-top:20px; margin-left:20px;">
-                    <md-card-content>
-                        <img src="assets/logos/2.png" style="height:100px;">
-                        <span class="cardHeader">Overcut Hairdesign <br>
+                    </span>
+
+                    <div style="vertical-align:top; float:right; text-align:right">
+                        <span class="strikethrough">20.00€</span>
+                        <span style="color: green; font-size: 30px;">15.99€</span>
+                        <p>
+
+                            <button md-raised-button (click)="navigateNext()" style="background-color: lightgreen;">Jetzt buchen</button>
+
+                    </div>
+
+                    <div style="font-size: 30px; float:right; vertical-align: top;margin-right:200px;margin-top:5px">
+                        Sonntag, der 18. Juni: 13:00-13:30 Uhr
+                    </div>
+
+
+
+
+
+                </md-card-content>
+
+
+                <md-card-footer>
+
+                </md-card-footer>
+            </md-card>
+
+            <md-card style="margin-top:20px; margin-left:20px;">
+                <md-card-content>
+                    <img src="assets/logos/2.png" style="height:100px;">
+                    <span class="cardHeader">Overcut Hairdesign <br>
                             <img src="assets/stars.png"> <span class="text">(42)</span> <br>
-                            <span class="entfernung">
+                    <span class="entfernung">
                                 350 m entfernt
                             </span>
-                        </span>
-                    </md-card-content>
-                </md-card>
+                    </span>
 
-                <md-card style="margin-top:20px; margin-left:20px;">
-                    <md-card-content>
-                        <img src="assets/logos/3.png" style="height:100px;">
-                        <span class="cardHeader">Scholz Haare Beauty <br>
+                    <div style="vertical-align:top; float:right; text-align:right">
+                        <span class="strikethrough">25.00€</span>
+                        <span style="color: green; font-size: 30px;">20.99€</span>
+                        <p>
+
+                            <button md-raised-button (click)="navigateNext()" style="background-color: lightgreen;">Jetzt buchen</button>
+
+                    </div>
+
+                    <div style="font-size: 30px; float:right; vertical-align: top;margin-right:200px;margin-top:5px">
+                        Sonntag, der 18. Juni: 13:15-14:00 Uhr
+                    </div>
+                </md-card-content>
+            </md-card>
+
+            <md-card style="margin-top:20px; margin-left:20px;">
+                <md-card-content>
+                    <img src="assets/logos/3.png" style="height:100px;">
+                    <span class="cardHeader">Scholz Haare Beauty <br>
                             <img src="assets/stars.png"> <span class="text">(42)</span> <br>
-                            <span class="entfernung">
+                    <span class="entfernung">
                                 450 m entfernt
                             </span>
-                        </span>
-                    </md-card-content>
-                </md-card>
+                    </span>
 
-                <md-card style="margin-top:20px; margin-left:20px;">
-                    <md-card-content>
-                        <img src="assets/logos/4.jpg" style="height:100px;">
-                            <span class="cardHeader">Haircut<br>
+                    <div style="vertical-align:top; float:right; text-align:right">
+                        <span class="strikethrough">18.00€</span>
+                        <span style="color: green; font-size: 30px;">14.99€</span>
+                        <p>
+
+                            <button md-raised-button (click)="navigateNext()" style="background-color: lightgreen;">Jetzt buchen</button>
+
+                    </div>
+
+                    <div style="font-size: 30px; float:right; vertical-align: top;margin-right:200px;margin-top:5px">
+                        Sonntag, der 18. Juni: 13:45-14:05 Uhr
+                    </div>
+                </md-card-content>
+            </md-card>
+
+            <md-card style="margin-top:20px; margin-left:20px;">
+                <md-card-content>
+                    <img src="assets/logos/4.jpg" style="height:100px;">
+                    <span class="cardHeader">Haircut<br>
                             <img src="assets/stars.png"> <span class="text">(42)</span> <br>
-                            <span class="entfernung">
+                    <span class="entfernung">
                                 0,5 km entfernt
                             </span>
-                        </span>
-                    </md-card-content>
-                </md-card>
+                    </span>
 
-                <md-card style="margin-top:20px; margin-left:20px;">
-                    <md-card-content>
-                        <img src="assets/logos/5.jpg" style="height:100px;">
-                        <span class="cardHeader">Hairdress <br>
+                    <div style="vertical-align:top; float:right; text-align:right">
+                        <span class="strikethrough">17.00€</span>
+                        <span style="color: green; font-size: 30px;">14.99€</span>
+                        <p>
+
+                            <button md-raised-button (click)="navigateNext()" style="background-color: lightgreen;">Jetzt buchen</button>
+
+                    </div>
+
+                    <div style="font-size: 30px; float:right; vertical-align: top;margin-right:200px;margin-top:5px">
+                        Sonntag, der 18. Juni: 13:50-14:30 Uhr
+                    </div>
+                </md-card-content>
+            </md-card>
+
+            <md-card style="margin-top:20px; margin-left:20px;">
+                <md-card-content>
+                    <img src="assets/logos/5.jpg" style="height:100px;">
+                    <span class="cardHeader">Hairdress <br>
                             <img src="assets/stars.png"> <span class="text">(42)</span> <br>
-                            <span class="entfernung">
+                    <span class="entfernung">
                                 1 km entfernt
                             </span>
-                        </span>
-                    </md-card-content>
-                </md-card>
-            </div>
+                    </span>
 
+                    <div style="vertical-align:top; float:right; text-align:right">
+                        <span class="strikethrough">30.00€</span>
+                        <span style="color: green; font-size: 30px;">28.99€</span>
+                        <p>
+
+                            <button md-raised-button (click)="navigateNext()" style="background-color: lightgreen;">Jetzt buchen</button>
+
+                    </div>
+
+                    <div style="font-size: 30px; float:right; vertical-align: top;margin-right:200px;margin-top:5px">
+                        Sonntag, der 18. Juni: 14:00-14:45 Uhr
+                    </div>
+                </md-card-content>
+            </md-card>
         </div>
+
     </div>
+</div>

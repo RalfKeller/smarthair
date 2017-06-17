@@ -2,6 +2,26 @@ body {
   margin: 0;
 }
 
+.strikethrough {
+  position: relative;
+  font-size: 20px;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
 .text {
     font-weight: normal;
     font-size: 15px;
@@ -23,6 +43,11 @@ md-card-content img {
     font-weight: bold;
     font-size: 20px;
     display: inline-block;
+}
+
+.nono a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 
 .frisur {
@@ -71,7 +96,11 @@ md-input-container {
   margin-top:5%;
   margin-left: 30%;
   margin-right: 30%;
-  background: whitesmoke
+  background: whitesmoke;
+}
+
+md-card {
+    border-radius: 5px !important;
 }
 
 .app-sidenav {

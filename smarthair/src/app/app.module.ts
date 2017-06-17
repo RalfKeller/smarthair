@@ -15,6 +15,8 @@ import { PacketComponent } from './packetComponent/packet.component';
 import { ListComponent } from './listComponent/list.component';
 import { ZeitComponent } from './zeitComponent/zeit.component';
 import { CompanyCardComponent } from './companyCardComponent/companycard.component';
+import { BookingComponent } from './bookingComponent/booking.component';
+import { FinalComponent } from './finalComponent/final.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/plz', pathMatch: 'full'},
@@ -22,6 +24,8 @@ const appRoutes: Routes = [
   {path: 'packet', component: PacketComponent},
   {path: 'list', component: ListComponent },
   {path: 'zeit', component: ZeitComponent },
+  {path: 'booking', component: BookingComponent },
+  {path: 'final', component: FinalComponent},
 ];
 
 @NgModule({
@@ -32,6 +36,8 @@ const appRoutes: Routes = [
     ListComponent,
     ZeitComponent,
     CompanyCardComponent,
+    BookingComponent,
+    FinalComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
