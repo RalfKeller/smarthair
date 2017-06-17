@@ -10,18 +10,21 @@ import { MdToolbarModule, MaterialModule, MdButtonModule, MdCheckboxModule, MdCa
 import { AppComponent } from './app.component';
 import { PlzComponent } from './plzComponent/plz.component';
 import { PacketComponent } from './packetComponent/packet.component';
+import { ListComponent } from './listComponent/list.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/plz', pathMatch: 'full'},
   {path: 'plz', component: PlzComponent},
-  {path: 'packet', component: PacketComponent}
+  {path: 'packet', component: PacketComponent},
+  {path: 'list', component: ListComponent}
 ];
 
 @NgModule({
   declarations: [
     PacketComponent,
     PlzComponent,
-    AppComponent
+    AppComponent,
+    ListComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

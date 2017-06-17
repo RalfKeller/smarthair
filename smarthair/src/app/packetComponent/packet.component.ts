@@ -13,7 +13,7 @@ export class PacketComponent implements OnInit {
     constructor(private router : Router) { }
 
     navigateNext() {
-        this.router.navigateByUrl("/plz");
+        this.router.navigateByUrl("/list");
     }
 
     ngOnInit() { }
